@@ -1,17 +1,17 @@
-<div class="container"></div>
+<div class="container">
 <app-header />
 <main class="track-content">
     <section class="track-card track-search">
         <div class="track-title">Отследить посылку</div>
         <div class="track-action">
             <div class="main-field track-field">
-                <section class="track-card track-result" id="trackResult" [class.is-visible]="trackResult()">
+                <input id="trackNumber" [(ngModel)]="trackNumber" placeholder="Введите номер посылки" autocomplete="off" />
             </div>
             <button id="trackButton" class="button track-button" type="button"
                 (click)="trackShipment()">Отследить</button>
         </div>
     </section>
-    <input id="trackNumber" [(ngModel)]="trackNumber" placeholder="Введите номер посылки" autocomplete="off" />.
+    <section class="track-card track-result" id="trackResult" [class.is-visible]="trackResult()">
         <div class="track-result-header">
             <div class="track-id" id="trackIdValue"></div>
             <div class="track-routes">
