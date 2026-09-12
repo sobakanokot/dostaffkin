@@ -49,6 +49,7 @@
         </div>
         <div class="main-speed">
             <div class="main-block-title">Скорость доставки</div>
+            <div class="main-speeds"></div>
             @for (speed of speeds; track speed.value) {
             <div class="main-speed-card" [class.is-active]="routeForm.value.speed === speed.value"
                 (click)="selectSpeed(speed.value)">

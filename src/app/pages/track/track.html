@@ -11,7 +11,7 @@
                 (click)="trackShipment()">Отследить</button>
         </div>
     </section>
-    <section class="track-card track-result" id="trackResult" [class.is-visible]="trackResult()">
+    <input id="trackNumber" [(ngModel)]="trackNumber" placeholder="Введите номер посылки" autocomplete="off" />.
         <div class="track-result-header">
             <div class="track-id" id="trackIdValue"></div>
             <div class="track-routes">
